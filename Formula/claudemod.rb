@@ -5,21 +5,21 @@
 class Claudemod < Formula
   desc "Workflow orchestrator for Claude Code that drives incremental feature delivery through structured, multi-phase development workflows."
   homepage "https://github.com/tab58/claudemod"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tab58/claudemod/releases/download/v0.3.0/claudemod_0.3.0_darwin_amd64.tar.gz"
-      sha256 "dcb8ecfac3507159f3716ff7c0d92212e4b00f0c1c7e64715e23ef910897bc98"
+      url "https://github.com/tab58/claudemod/releases/download/v0.4.0/claudemod_0.4.0_darwin_amd64.tar.gz"
+      sha256 "39c061bf26615d07b829a8e423f5df3e168fafafbc4187ed188e3a61307b3837"
 
       define_method(:install) do
         bin.install "claudemod"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tab58/claudemod/releases/download/v0.3.0/claudemod_0.3.0_darwin_arm64.tar.gz"
-      sha256 "d42cd050cd0a6e61a5090f0280faaed8594224c129e501b256dae082a087b169"
+      url "https://github.com/tab58/claudemod/releases/download/v0.4.0/claudemod_0.4.0_darwin_arm64.tar.gz"
+      sha256 "0ce39cb52bb40d88cce432c2f245062b18637956208a592ec25e0af6380e13bc"
 
       define_method(:install) do
         bin.install "claudemod"
@@ -29,15 +29,15 @@ class Claudemod < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tab58/claudemod/releases/download/v0.3.0/claudemod_0.3.0_linux_amd64.tar.gz"
-      sha256 "2cee63fae5639f3cfe1130199d6c53aecacb3ec05d09107dbe927c29a828c143"
+      url "https://github.com/tab58/claudemod/releases/download/v0.4.0/claudemod_0.4.0_linux_amd64.tar.gz"
+      sha256 "efc02862bf1c8eb9771074f6276e23e75aa9e69daad31103087e43dda888d4bc"
       define_method(:install) do
         bin.install "claudemod"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tab58/claudemod/releases/download/v0.3.0/claudemod_0.3.0_linux_arm64.tar.gz"
-      sha256 "85ca785f5e28cde444c8bce890bdee30a042100403d9977f5612ee1a97e1cbd3"
+      url "https://github.com/tab58/claudemod/releases/download/v0.4.0/claudemod_0.4.0_linux_arm64.tar.gz"
+      sha256 "bf37da5e0fadbf58f96a9b8339152cc26679416362ab285c294ae28f0656aeb3"
       define_method(:install) do
         bin.install "claudemod"
       end
